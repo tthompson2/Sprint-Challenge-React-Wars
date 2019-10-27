@@ -24,30 +24,40 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [X] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+React JS is a programming language that allows you to contain all of the different sections of front-end including Markup, Styling, and functionality (Javascript). It is designed to solve the problem of usability regarding creating internal libraries within teams and since all of the individual pieces of the froent can be tied together it makes the process of making changes to the code much easier for the programmer that knows how to use all of them effectively.
 
-- [ ] Describe state.
+- [X] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+ To think in React you need to think with components, state, and props. You need to understand that will need to connect different components together, and figure out how information is supposed to flow between the components to be able to determine how to render/build React Applications
+
+- [X] Describe state.
+
+State determines exact;y how each object in React behaves and renders. This value can be constantly changed in real time based on how it is programmed by the programmer.
+
+- [X] Describe props.
+
+Props are the values associated with each of the different components that are used to pass individual values around between each of the different components.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+ Hooks are used to sync effects in a react component. Side effects result in changes that can be observed when a calculation (such as an API call is completed). 
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
+- [X] Create a forked copy of this project.
+- [X] Add TL as collaborator on Github.
 - [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
 - [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [x] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
+- [X] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
+- [X] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [X] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 
