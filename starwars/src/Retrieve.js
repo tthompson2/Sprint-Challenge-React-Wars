@@ -5,8 +5,6 @@ import SWcard from "./SWcard";
 export default function Retrieve() {
 
     const[value, setValue] = useState([]);
-    //const[value2, setValue2] = useState([]);
-    //const[value3, setValue3] = useState([]);
 
     useEffect(() => {
 
