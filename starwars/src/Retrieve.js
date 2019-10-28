@@ -9,22 +9,22 @@ export default function Retrieve() {
     useEffect(() => {
 
     axios
-         .get("https://swapi.co/documentation#people")
+         .get("https://swapi.co/api/people/1/")
     
          .then(response => {
           console.log(response);
-          console.log(value);
-          setValue(response);
+          setValue(response.data);
+          value=response.data;
          })
-         .error(error => {
+         .catch(error => {
           console.log(`This is the error that we encounter:${error}`)
          });
         }, [])
 
-    return
+    return (
       <div>
         {
-          value.map(element => (
+         // Object.keys(value).map(element => (
           
             <SWcard name={value.name}
               height={value.height}
@@ -34,8 +34,10 @@ export default function Retrieve() {
               birth_color={value.eye_color}
               gender={value.gender}
               homeworld={value.homeworld}
-              />)
-          )
+              element={value.name}
+              />//)
+        //)
         }
       </div>
+    )
 }
