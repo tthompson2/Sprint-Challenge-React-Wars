@@ -15,6 +15,23 @@ export default function Retrieve() {
           console.log(response);
           setValue(response.data);
           value=response.data;
+
+          axios
+               .get("https://swapi.co/api/people/2/")
+               .then(response => {
+                   console.log(response);
+                   setValue(response.data);
+                   value=response.data;
+
+                   axios
+                       .get("https://swapi.co/api/people/3/")
+                       .then(response => {
+                           console.log(response);
+                           setValue(response.data);
+                           value=response.data;
+                       })
+               })
+               
          })
          .catch(error => {
           console.log(`This is the error that we encounter:${error}`)
