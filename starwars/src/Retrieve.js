@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect}from 'react';
 import axios from "axios";
 import SWcard from "./SWcard";
 
@@ -11,28 +11,12 @@ export default function Retrieve() {
     useEffect(() => {
 
     axios
-         .get("https://swapi.co/api/people/1/")
-    
+         .get("https://swapi.co/api/people/")
          .then(response => {
           console.log(response);
-          value=response.data;
-          setValue(response.data);
+          setValue(response.data.results);
+          console.log(value);
 
-          /*axios
-               .get("https://swapi.co/api/people/2/")
-               .then(response => {
-                   console.log(response);
-                   setValue2(response.data);
-                   value2=response.data;
-
-                   axios
-                       .get("https://swapi.co/api/people/3/")
-                       .then(response => {
-                           console.log(response);
-                           setValue3(response.data);
-                           value2=response.data;
-                       })
-               })*/
          })
          .catch(error => {
           console.log(`This is the error that we encounter:${error}`)
@@ -42,7 +26,7 @@ export default function Retrieve() {
     return (
       <div>
         {
-         // Object.keys(value).map(element => (
+          Object.keys(value).map(element => (
             <SWcard name={value.name}
               height={value.height}
               mass={value.mass}
@@ -51,9 +35,8 @@ export default function Retrieve() {
               birth_color={value.eye_color}
               gender={value.gender}
               homeworld={value.homeworld}
-              element={value.name}
-              />//)
-        //)
+              />)
+        )
         }
       </div>
     )
