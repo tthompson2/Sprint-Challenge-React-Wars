@@ -6,9 +6,9 @@ const styledDiv = styled.div``;
 const WrapperDiv = styled.div`
 
    width: 100%
-   color: green;
-   height: 100%;
-
+   color: green
+   height: 100%
+   font-family: Fantasy
 `; 
 
 const SWcard = props => {
@@ -32,7 +32,7 @@ const SWcard = props => {
             {props.gender}
             <br></br>
             {props.homeworld}
-            <br></br>>
+            <br></br>
         </WrapperDiv>
     )
 }
