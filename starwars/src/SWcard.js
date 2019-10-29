@@ -1,18 +1,20 @@
 import React from 'react';
-//import styled from 'styled-components';
+import styled from 'styled-components';
 
-/*const styledDiv = styled.div``;
+const styledDiv = styled.div``;
 
 const WrapperDiv = styled.div`
 
    width: 100%
+   color: green;
+   height: 100%;
 
-`; */
+`; 
 
 const SWcard = props => {
 
     return (
-        <div>
+        <WrapperDiv>
             {props.name}
             <br></br>
             {props.height}
@@ -30,8 +32,8 @@ const SWcard = props => {
             {props.gender}
             <br></br>
             {props.homeworld}
-            <br></br>
-        </div>
+            <br></br>>
+        </WrapperDiv>
     )
 }
 
