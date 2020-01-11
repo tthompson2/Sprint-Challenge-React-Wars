@@ -11,7 +11,6 @@ const Alert = styled.div`
     ${props => (props.color === 'info' ? `background: #00FFFF;` : null)}
     ${props => (props.color === 'light' ? `background: #f00000;` : null)}
     ${props => (props.color === 'dark' ? `background: #ffFF55;` : null)}
-
 `;
 
 const StarWarsCard = props => {
@@ -46,10 +45,12 @@ const StarWarsCard = props => {
                 {props.birth_year}
                 <br />
             </Alert>
-            <Alert color="dark">y
+            <Alert color="dark">
                 {props.eye_color}
                 <br />
             </Alert>
+            <br/>
+            <br/>
         </div>
     )
 }
