@@ -1,6 +1,6 @@
 import React from 'react';
 
-function StarWarsCard (props) {
+const StarWarsCard = props => {
 
     return (
         <div>
